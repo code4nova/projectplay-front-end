@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+    --color:primary: #5a6063;
+    --color:secondary: #0078ae ;
+    --color-tertiary: #FFF; 
+  
+}
+/*===== [GLOBAL SELECTORS] =====*/
+body {
+   font-family: Raleway;
+   background-image: url('../media/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+ul {
+   list-style: none;
+}
+a {
+  outline: 0;
+}
+p {
+  margin: 0 0 15px;
+  line-height: 1.8em;
+  font-style: normal;
+}
+/*===== [HEADER] =====*/
+header nav {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0 0 10px 0 #0C0848;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: 0;
+}
+header nav ul li a {
+  color: var(--color-primary);
+  display: block;
+  padding: 40px 1vw;
+  font-family: Oswald, sans-serif;
+  font-size: 1.3em;
+  line-height: 20px;
+  transition: all .4s;
+}
