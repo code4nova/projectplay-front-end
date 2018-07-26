@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>project-play</title>
+<link rel="stylesheet" href="assets/css/grid.css"> 
+<link rel="stylesheet" href="assets/css/global.css"> 
+<link rel="stylesheet" href="assets/css/responsive.css"> 
+<link rel="stylesheet" href="assets/css/gallery.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/gallery.js"></script>
+</head>
+<body>
+ <img id="background-img" src="assets/media/img/bg.png" alt="body_background">
+ <header>
+  <div class="banner">
+    <p>Text your address (include city, state) to 703.520.2676 to find playspaces near you!</p>
+  </div>
+  <nav> 
+   <div id="btn-menu">
+    <span class="fa fa-bars"></span>
+   </div>
+   <div class="side-image">
+     <a href="index.html">
+      <img src="assets/media/img/projectplay-logo.svg" alt="side-image">
+     </a>
+   </div>
+   <ul class="menu">
+    <li><a href="about.html">About project play</a></li>
+    <li><a href="why-play.html">Why Play</a></li>
+    <li><a href="play-ideas.html">Play Ideas</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="photo-gallery.html">Photo Gallery</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+  <aside>
+    <div id="side-map">
+      <a href="index.html">
+      <img src="assets/media/img/sidebar-map_NEW.png" alt="side-img">
+      </a>
+    </div>
+  </aside> 
+  <section id="page-content">
+    <article class="row">
+      <div class="column">
+        <img src="assets/media/gallery/ASA-Photo4.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/ErinC-Photo1.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/ErinC-Photo2.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/ErinC-Photo3.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/JenniferM-Photo2.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/JenniferM-Photo3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/Website-picture-4.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/ASA-Photo61.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+    </article>
+    <article class="row second">
+      <div class="column">
+        <img src="assets/media/gallery/website-picture-3.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/Website-pictures.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="assets/media/gallery/Website-pictures2.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+      </div>
+      </article>
+      <article id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 11</div>
+            <img src="assets/media/gallery/ASA-Photo4.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 11</div>
+            <img src="assets/media/gallery/ErinC-Photo1.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 11</div>
+            <img src="assets/media/gallery/ErinC-Photo2.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 11</div>
+            <img src="assets/media/gallery/ErinC-Photo3.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 11</div>
+            <img src="assets/media/gallery/JenniferM-Photo2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 11</div>
+            <img src="assets/media/gallery/JenniferM-Photo3.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 11</div>
+            <img src="assets/media/gallery/Website-picture-4.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 11</div>
+            <img src="assets/media/gallery/ASA-Photo61.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 11</div>
+            <img src="assets/media/gallery/website-picture-3.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 11</div>
+            <img src="assets/media/gallery/Website-pictures.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 11</div>
+            <img src="assets/media/gallery/Website-pictures2.jpg" style="width:100%">
+          </div>
+        
+        <!--Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </article>
+    <p id="copyright">©2018&nbsp;Project Play Alexandria.&nbsp;All rights reserved.</p>
+  </section>
+ </main>
+ <footer>
+ </footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzKpIVbHrX5FU6qv-ke0LU1p4JlfNNfxU&callback=myMap"></script>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  /*var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");*/
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  /*for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }*/
+  slides[slideIndex-1].style.display = "block";
+  /*dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;*/
+}
+</script>
+</body>
+</html>
