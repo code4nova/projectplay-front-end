@@ -1,3 +1,5 @@
+import markerimage from '../../assets/media/img/playspace_icon.png';
+
 window.playApp = function()
 {
 	var inst = {};
@@ -17,15 +19,15 @@ window.playApp = function()
 	inst.filters = {};
 
 	inst.initialize = function() {
-		var mapCenter = new google.maps.LatLng(config.startLatLon[0], config.startLatLon[1]);
-		var zoomLvl = config.startZoom;
+		// var mapCenter = new google.maps.LatLng(config.startLatLon[0], config.startLatLon[1]);
+		// var zoomLvl = config.startZoom;
 
-		var mapOptions = {
-		  zoom: zoomLvl,
-		  center: mapCenter,
-		  mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		inst.map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+		// var mapOptions = {
+		//   zoom: zoomLvl,
+		//   center: mapCenter,
+		//   mapTypeId: google.maps.MapTypeId.ROADMAP
+		// };
+		inst.map = window.map;//new google.maps.Map(document.getElementById('mymap'), mapOptions);
 
 		//init branding stuff from app.config
 		if (config.logo) {
@@ -466,7 +468,6 @@ window.playApp = function()
 		for (var i = 0; i < inst.markers.length; i++ ) {
 	    	bounds.extend(inst.markers[i].position);
 	    }
-
 	    inst.map.fitBounds(bounds);
 	};
 
@@ -474,7 +475,7 @@ window.playApp = function()
         for (var i = 0; i < list.length; i++) {
 			var playObj = list[i];
 
-			var image = new google.maps.MarkerImage('map/img/playspace_icon.png',
+			var image = new google.maps.MarkerImage(markerimage,
 						new google.maps.Size(32, 37), //icon size
 					    new google.maps.Point(0,0), //origin
 					    new google.maps.Point(16, 37) //offset
