@@ -162,8 +162,8 @@ nav.sticky ul li a {
     background-color: var(--color-secondary);
     border: 2px solid var(--color-tertiary);
     border-radius: 10px 0px 0px 10px;
-    margin-right: 1em;
-    margin-left: 3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 aside div {
     color: var(--color-tertiary);
