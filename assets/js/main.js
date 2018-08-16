@@ -5,14 +5,12 @@ $(document).ready(function(){
       $('.side-image  img').css({
         'max-height':'100px',
         'max-width': '70px', 
-        'margin-top':'5px',
       });
     } else {
       $('nav').removeClass('sticky');
       $('.side-image  img').css({
         'max-height':'220px',
         'max-width': '100%', 
-        'margin-top':'0px',
       });
     }
     if($(window).width() <=900){
