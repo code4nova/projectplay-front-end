@@ -83,7 +83,7 @@
 	grid-template-rows: auto;
     }
     main {
-        max-width: 90%;
+        max-width: 80%;
         margin: auto;
         height: 60vh;
         margin-top: 150px;
