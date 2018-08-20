@@ -1,0 +1,103 @@
+@media only screen and (max-width: 900px) {
+    header nav {
+        height: 100px;
+    }
+    header nav .menu {
+        box-orient: vertical;
+        box-direction: normal;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        transition: background .5s, left .5s ease;
+        text-align: center;
+        left: -100%;
+	z-index: 1;
+    }header nav.sticky .menu {
+	top: 100px;
+    }
+    header nav.sticky .side-image img {
+	top: 0;
+    }
+    header nav .menu > li > a {
+	background-color: rgba(0,0,0, 0.5);
+        color: #FFF;
+        border-radius: 0;
+        margin: 0;
+        padding: 20px 0;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    header nav > ul > li::before,
+    header nav .menu > li:hover > a::after {
+        display: none;
+    }
+    .open-menu {
+        left: 0 !important;
+    }
+    #btn-menu {
+        display: block;
+        height: 100px;
+        cursor: pointer;
+        background-color: #8cc645;
+    }
+    .side-image img {
+        max-height: 100px;
+        max-width: 64px;
+	position: absolute;
+	top: 0;
+	left: 5px;
+    }
+    #btn-menu span {
+        color: #FFF;
+        position: absolute;
+        right: 0;
+        padding: 30px 20px;
+        font-size: 3em;
+        line-height: 20px;
+    }
+    main {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 130px;
+    }  
+    #side-map img {
+        width: 100%;
+    } 
+    #copyright {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        line-height: 100%;
+        font-size: 80%;
+        text-align: center;
+    } 
+}
+@media (min-width: 901px) {
+     header nav.sticky .side-image img {
+        margin-top: 6px;
+    }
+    header nav {
+	display: grid;
+	grid-template-columns: 3fr 9fr;
+	grid-template-rows: auto;
+    }
+    main {
+        max-width: 80%;
+        margin: auto;
+        height: 60vh;
+        margin-top: 150px;
+    }
+    aside {
+        margin-top: 6em;
+    }
+    #copyright {
+        width: 100%;
+        line-height: 100%;
+        font-size: 80%;
+        text-align: center;
+        position: absolute;
+        bottom: 18px;
+        left: 0px;
+    }
+}

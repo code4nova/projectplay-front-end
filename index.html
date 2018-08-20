@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>project-play</title>
+<link rel="stylesheet" href="assets/css/grid.css"> 
+<link rel="stylesheet" href="assets/css/global.css"> 
+<link rel="stylesheet" href="assets/css/responsive.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+</head>
+<body>
+ <img id="background-img" src="assets/media/img/bg.png" alt="body_background">
+ <header>
+  <div class="banner">
+    <p>Text your address (include city, state) to 703.520.2676 to find playspaces near you!</p>
+  </div>
+  <nav> 
+   <div id="btn-menu">
+    <span class="fa fa-bars"></span>
+   </div>
+   <div class="side-image">
+     <a href="index.html">
+      <img src="assets/media/img/projectplay-logo.svg" alt="side-image">
+     </a>
+   </div>
+   <ul class="menu">
+    <li><a href="about.html">About project play</a></li>
+    <li><a href="why-play.html">Why Play</a></li>
+    <li><a href="play-ideas.html">Play Ideas</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="photo-gallery.html">Photo Gallery</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main id="home-page">
+  <aside id="sidebar-homepage">
+     <div class="show-button">
+     <img src="assets/media/icons/playspaces.png" alt="side-image">
+     </div>
+     <div class="filter_panel">
+        <div class="filter">
+          <span>Whitin</span>
+            <select id="inputDistance" class='input-mini'>
+            <option>0.25</option>
+            <option>0.5</option>
+            <option>0.75</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+          <span>mile(s) of</span>
+      </div>
+      <input placeholder="This address..." size="12" type="text">
+      <p>I care about...</p>
+      <div class="label">Restrooms:</div>
+      <div class="btn-group">
+          <input type="radio" id="filtRestroomY" name="filtRestrom" value="yes"><label for="filtRestroomY">Yes</label>  
+          <input type="radio" id="filtRestroomN" name="filtRestroom" value="no" checked="checked"><label for="filtRestroomN">No</label>
+      </div>
+      
+      <div class="label">Drinking Water:</div>
+      <div class="btn-group">
+          <input type="radio" id="filtDrinkingWY" name="filtDrinkingW" value="yes"><label for="filtDrinkingWY">Yes</label>
+          <input type="radio" id="filtDrinkingWN" name="filtDrinkingW" value="no" checked="checked"><label for="filtDrinkingWN">No</label>
+      </div>
+      
+      <div class="label">Seating: </div>
+      <div class="btn-group">
+          <input type="radio" id="filtSeatingY" name="filtSeating" value="yes"><label for="filtSeatingY">Yes</label>
+          <input type="radio" id="filtSeatingN" name="filtSeating" value="no" checked="checked"><label for="filtSeatingN">No</label>
+      </div>
+
+      <div class="label">Shade: </div>
+      <div class="btn-group">
+          <input type="radio" id="filtShadeY" name="filtShade" value="yes"><label for="filtShadeY">Yes</label>
+          <input type="radio" id="filtShadeN" name="filtShade" value="no" checked="checked"><label for="filtShadeN">No</label>
+      </div>
+
+      <div class="label">Age Level: </div>
+      <div class="btn-group">
+          <input type="radio" id="filtAge1" name="filtAge" value="any" checked="checked"><label for="filtAge1">All</label>
+          <input type="radio" id="filtAge2" name="filtAge" value="twotofive"><label for="filtAge2">2-5</label>
+          <input type="radio" id="filtAge3" name="filtAge" value="fiveto12"><label for="filtAge3">5-12</label>
+      </div>
+
+      <div id='searchBtn' class='btn'>SEARCH &raquo; </div>
+     </div>
+   <div id="results_panel">
+      <div id="app_listview">
+      </div>
+      <div id='returnBtn' class='btn'>&laquo; CLEAR SEARCH</div>
+  </div>
+  </aside> 
+  <section>
+    <div id="map"></div>
+    <p id="copyright">©2015&nbsp;Project Play Northern Virginia.&nbsp;All rights reserved.</p>
+  </section>
+ </main>
+ <footer>
+ </footer>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzKpIVbHrX5FU6qv-ke0LU1p4JlfNNfxU&callback=myMap"></script>
+</html>
