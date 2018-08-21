@@ -39,10 +39,11 @@ header .banner {
 }
 header .banner p {
     background-color: var(--color-primary);
-    padding: 5px;
     color: var(--color-tertiary);
     border: 1px solid var(--color-tertiary);
     border-radius: 5px;
+    text-align: center;
+
 }
 header nav {
     position: absolute;
@@ -178,6 +179,11 @@ aside div {
     text-align: center;
     padding: 10px;
 }
+.filter .input-mini,
+.filter option {
+    padding: 10px;
+    font-size: 20px;
+}
 #filter_panel > input {
     width: 100%;
     padding: 8px;
@@ -188,7 +194,7 @@ aside div {
 }
 #filter_panel {
     padding: 10px 1em;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 aside .btn {
     background-color: var(--color-primary);
@@ -202,7 +208,7 @@ aside #results_panel .btn {
     display: none;
 }
 aside .btn-group {
-    margin-left: 2em;
+    margin-left: 2vw;
 }
 .side-image a,
 #side-map a {
