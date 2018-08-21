@@ -13,6 +13,9 @@
       aside {
           margin-bottom: 2em;
       }
+      #app_listview strong {
+	  font-size: 20px;
+      }
     }
    
 }
