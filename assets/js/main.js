@@ -3,14 +3,14 @@ $(document).ready(function(){
     if($(this).scrollTop() >=10) {
       $('nav').addClass('sticky');
       $('.side-image  img').css({
-        'max-height':'100px', 
-        'margin-top':'5px',
+        'max-height':'100px',
+        'max-width': '70px', 
       });
     } else {
       $('nav').removeClass('sticky');
       $('.side-image  img').css({
-        'max-height':'220px', 
-        'margin-top':'0px',
+        'max-height':'220px',
+        'max-width': '100%', 
       });
     }
     if($(window).width() <=900){
