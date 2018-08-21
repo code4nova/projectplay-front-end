@@ -179,16 +179,17 @@ aside div {
 .show-button {
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 } 
 .filter {
     text-align: center;
     padding: 10px;
 }
-.filter_panel p {
+#filter_panel p {
     margin: 1em 0;
     border-bottom: 1px solid var(--color-tertiary);
 }
-.filter_panel {
+#filter_panel {
     padding: 10px 1em;
     font-size: 1.3em;
 }
@@ -197,7 +198,8 @@ aside .btn {
     border: 1px solid var(--color-tertiary);
     border-radius: 5px;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px;
+    cursor: pointer;
 }
 aside #results_panel .btn {
     display: none;
@@ -213,6 +215,26 @@ aside .btn-group {
 .side-image a:hover,
 #side-map a:hover {
     opacity: 0.8;
+}
+#app_listview {
+   height: 400px;
+   background-color: #FFFFFF;
+   overflow: auto;
+   text-align: left;
+   border-radius: 5px;
+}
+#app_listview strong {
+   color: #202020;
+   cursor: pointer;
+}
+#app_listview .oddRow {
+    background-color: #E1E1E1;
+}
+.listViewRow {
+    padding: 3px;
+}
+#results_panel {
+    padding: 0 5px;
 }
 /*===== [ PAGE-CONTENT ] =====*/
 #page-content {
