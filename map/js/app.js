@@ -112,7 +112,7 @@ window.playApp = function()
 		clearAll();
 		getFilters();
 		if (!inst.mapResults)
-			inst.svc.getAllPlaygrounds(function(data) { inst.mapResults=data; renderPlaygrounds(data); zoomToMarkerBounds();});
+			inst.svc.getAllPlaygrounds(function(data) {renderPlaygrounds(data); zoomToMarkerBounds();});
 		else {
 			renderPlaygrounds(inst.mapResults); zoomToMarkerBounds();
 		}
@@ -185,8 +185,11 @@ window.playApp = function()
 	      radius: dist * 1609.344
 	    };
 
-	    inst.lastCircle = new google.maps.Circle(circleOptions);
-	    inst.svc.getAllPlaygrounds(renderPlaygrounds);
+		inst.lastCircle = new google.maps.Circle(circleOptions);
+		if (!inst.mapResults)
+			inst.svc.getAllPlaygrounds(renderPlaygrounds);
+		else
+			renderPlaygrounds(inst.mapResults);
 	};
 
 	var renderSearchCircle = function(results) {
@@ -252,6 +255,8 @@ window.playApp = function()
 
 	var renderPlaygrounds = function(playData) {
 		if (playData) {
+			if(!inst.mapResults)
+				inst.mapResults=playData
 			var filteredList = [];
 			//console.log(inst.filters);
 			for (var i = 0; i < playData.length; i++) {
