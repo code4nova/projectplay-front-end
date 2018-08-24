@@ -5,6 +5,9 @@
           grid-template-columns: 3fr 9fr;
           grid-template-rows: auto;  
       }
+      #map {
+	  height: 100%;
+      }
     }
     @media screen and (max-width: 767px) {
       aside {
@@ -12,6 +15,9 @@
       }
       #app_listview strong {
 	  font-size: 20px;
+      }
+      #map {
+          height: 75vh;
       }
     }
    
