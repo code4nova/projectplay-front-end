@@ -111,7 +111,11 @@ window.playApp = function()
 	var showAllPlaygrounds = function() {
 		clearAll();
 		getFilters();
-		inst.svc.getAllPlaygrounds(function(data) { renderPlaygrounds(data); zoomToMarkerBounds();});
+		if (!inst.mapResults)
+			inst.svc.getAllPlaygrounds(function(data) { inst.mapResults=data; renderPlaygrounds(data); zoomToMarkerBounds();});
+		else {
+			renderPlaygrounds(inst.mapResults); zoomToMarkerBounds();
+		}
 	};
 
 	var searchByAddress = function() {
