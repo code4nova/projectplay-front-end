@@ -1,6 +1,6 @@
 window.playSvc = function(url) {
 	var inst = {};
-	//inst.baseUrl = url;
+	// inst.baseUrl = 'http://localhost:3000/';
 	inst.baseUrl = "http://jerseycoder.webfactional.com/";
 
 	inst.getAllPlaygrounds = function(callback) {
