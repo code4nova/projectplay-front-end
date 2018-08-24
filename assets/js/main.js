@@ -23,13 +23,14 @@ $(document).ready(function(){
      $('.menu').toggleClass("open-menu");
   });    
 });
+// wn map;
 function myMap() {
   var mapOptions = {
       center: new google.maps.LatLng(39, -77),
       zoom: 12,
       mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  window.map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 
 window.myMap = myMap;

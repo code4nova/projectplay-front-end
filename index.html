@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>project-play</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">-->
+
+<title>Project Play Northern Virginia</title>
+
+<script type="text/javascript" src="//use.typekit.net/stv0jvj.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- <script type="text/javascript" src="//use.typekit.net/stv0jvj.js"></script> -->
+<!-- <style type="text/css">.tk-futura-pt,Garamond Premier Pro Display{font-family:"futura-pt",sans-serif;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+
+<meta name="robots" content="noodp,noydir">
+<link rel="canonical" href="http://novaplays.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Project Play Northern Virginia">
+<meta property="og:description" content="Kids who play outside are happy, healthy and strong! Find great places to play in Alexandria, VA using our online tool that allows you to search for a park near you.">
+<meta name="Description" content="Kids who play outside are happy, healthy and strong! Find great places to play in Alexandria, VA using our online tool that allows you to search for a park near you.">
+<meta property="og:url" content="http://novaplays.org">
+<meta property="og:site_name" content="Project Play Northern Virginia">
+<meta property="og:image" content="http://novaplays.org/projectplay-logo-og.png">
 <link rel="stylesheet" href="assets/css/grid.css"> 
 <link rel="stylesheet" href="assets/css/global.css"> 
 <link rel="stylesheet" href="assets/css/responsive.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+<!-- FAVICON -->
+<link rel="icon" type="image/svg" sizes="16x16" href="assets/media/pwa/favicon.svg"> 
+
+<!-- Custom Manifest -->
+<link rel="manifest" href="assets/js/manifest.json">
+
+<!-- Custom IOS pwa -->
+<link rel="apple-touch-icon" sizes="152x152" href="assets/media/pwa/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/media/pwa/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="167x167" href="assets/media/pwa/touch-icon-ipad-retina.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Project-Play">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
 </head>
+
 <body>
  <img id="background-img" src="assets/media/img/bg.png" alt="body_background">
  <header>
@@ -38,9 +81,9 @@
  <main id="home-page">
   <aside id="sidebar-homepage">
      <div class="show-button">
-     <img src="assets/media/icons/playspaces.png" alt="side-image">
+     <img id="showAllBtn" src="assets/media/icons/playspaces.png" alt="side-image">
      </div>
-     <div class="filter_panel">
+     <div id="filter_panel">
         <div class="filter">
           <span>Whitin</span>
             <select id="inputDistance" class='input-mini'>
@@ -55,7 +98,7 @@
             </select>
           <span>mile(s) of</span>
       </div>
-      <input placeholder="This address..." size="12" type="text">
+	  <input id="inputAddress" placeholder="This address..." size="12" type="text">
       <p>I care about...</p>
       <div class="label">Restrooms:</div>
       <div class="btn-group">
@@ -104,6 +147,31 @@
  <footer>
  </footer>
 </body>
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+<!-- <script type="text/javascript" src="map/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/jquery-migrate.min.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/modernizr.custom.06523.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/site-wide.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/wait-for-images.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/background-image.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/jquery.form.min.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/jquery.simplemodal.1.4.4.min.js"></script> -->
+<!-- <script type="text/javascript" src="map/js/scripts.js"></script> -->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu38l6VjY_t3fmd6ljYNUSVZdCUxQrC6U&sensor=false&libraries=places,geometry" ></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzKpIVbHrX5FU6qv-ke0LU1p4JlfNNfxU&callback=myMap"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzKpIVbHrX5FU6qv-ke0LU1p4JlfNNfxU&sensor=false&libraries=places,geometry"></script> -->
+
+ <script src ="map/js/playSvc.js"></script>
+
+ <script src="map/js/app.js" ></script> 
+ <script>
+		var $ = jQuery;
+		var app;
+		$(document).ready(function() {
+			app = playApp();
+			app.initialize();
+			$(window).resize(app.rightSizeListView);
+		});
+	</script>
+  
 </html>

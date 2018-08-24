@@ -5,13 +5,19 @@
           grid-template-columns: 3fr 9fr;
           grid-template-rows: auto;  
       }
+      #map {
+	  height: 100%;
+      }
     }
     @media screen and (max-width: 767px) {
-      header .banner p {
-	  font-size: 2vw;
-      }
       aside {
           margin-bottom: 2em;
+      }
+      #app_listview strong {
+	  font-size: 20px;
+      }
+      #map {
+          height: 75vh;
       }
     }
    

@@ -1,0 +1,43 @@
+{ "name" : "Project Play",
+  "short_name" : "P-Play",
+  "manifest_version": 2,
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "/ ",
+  "background_color": "#fff",
+  "icons": [{
+    "src": "/assets/media/pwa/icon48.png", 
+    "sizes": "48x48", 
+    "type": "image/png"
+  },{
+    "src": "/assets/media/pwa/icon72.png", 
+    "sizes": "72x72", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon96.png", 
+    "sizes": "96x96", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon144.png", 
+    "sizes": "144x144", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon168.png", 
+    "sizes": "168x168", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon192.png", 
+    "sizes": "192x192", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon256.png", 
+    "sizes": "256x256", 
+    "type":"image/png"
+  },{
+    "src": "/assets/media/pwa/icon512.png", 
+    "sizes": "512x512", 
+    "type":"image/png"
+  }]
+ }
+
