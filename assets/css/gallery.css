@@ -23,22 +23,11 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 30px;
     left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
-}
-/* [Modal-content] */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
 }
 /* [The Close Button] */
 .close {
