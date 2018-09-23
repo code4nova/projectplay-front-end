@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  var date = new Date;
+  $('#cyear').text(date.getFullYear())
   $(window).scroll(function() {
     if($(this).scrollTop() >=10) {
       $('nav').addClass('sticky');
