@@ -357,9 +357,11 @@ window.playApp = function()
 				$('#modal_img').empty();
 				if (result.imageurl) {
 					var img = $('<img style="max-width:100%;" src="' + result.imageurl + '"></img>');
+					// console.log(img)
+					// console.log(result)
 					$('#modal_img').append(img);
-					img.load(function() {
-						//console.log("image loaded.");
+					img.on('load', function() { //.load(function() {
+						// console.log("image loaded.");
 						$('#simplemodal-container').css({height: $('#app_detail_modal').outerHeight()});
 						$('#simplemodal-container').css({top: ($(document.body).outerHeight() - $('#simplemodal-container').outerHeight()) / 2});
 						$('#modal_img').show();

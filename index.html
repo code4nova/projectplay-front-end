@@ -31,10 +31,13 @@
 <meta property="og:site_name" content="Project Play Northern Virginia">
 <meta property="og:image" content="http://novaplays.org/projectplay-logo-og.png">
 <link rel="stylesheet" href="assets/css/grid.css"> 
+<!-- <link rel="stylesheet" href="assets/css/projectplay.css">  -->
 <link rel="stylesheet" href="assets/css/global.css"> 
 <link rel="stylesheet" href="assets/css/responsive.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="map/js/jquery.simplemodal.1.4.4.min.js"></script>
+
 
 <!-- FAVICON -->
 <link rel="icon" type="image/svg" sizes="16x16" href="assets/media/pwa/favicon.svg"> 
@@ -144,6 +147,34 @@
     <p id="copyright">©<span id="cyear">2015</span>&nbsp;Project Play Northern Virginia.&nbsp;All rights reserved.</p>
   </section>
  </main>
+ <div id="app_detail_modal" style="display:none">
+    <div id="detail_header" class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id='detail_title'></h3>
+    </div>
+    <div class="modal-body">
+        <p id="modal_img"></p>
+        <p id="modal_school"><span id="detail_school"><em>This is a school: </em>School playgrounds are open after school and on the weekends. However, school activities, including Extended Day have priority use. Children are expected to be supervised by an adult while using the playgrounds.</span></p>
+        <p id="modal_restrooms">Restrooms: <span id='detail_restrooms'></span></p>
+        <p id="modal_drinking">Drinking Fountains: <span id='detail_drinkingfountain'></span></p>
+        <p id="modal_seating">Seating: <span id='detail_seating'></span></p>
+        <p id="modal_age">Age Groups: <span id="detail_agelevel_text"></span></p>
+        <p id="modal_comments">Comments: <span id="detail_comments_text"></span></p>
+        <p id="modal_url">&raquo; <span id="detail_url"></span></p>
+        <!--<table>
+            <tr>
+                <td id='detail_comments_label'>Comments:</td>
+                <td id='detail_comments_text'></td>
+            </tr>
+        </table>-->
+    </div>
+    <!--
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+    </div>
+    -->
+</div>
+
  <footer>
  </footer>
 </body>

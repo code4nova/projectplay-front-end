@@ -255,3 +255,34 @@ aside .btn-group {
 #page-content a {
     color:#202020;
 }
+/* simplemodal */
+.filter {
+    margin: 5px 0px;
+}
+
+#app_detail_modal {
+    padding:10px;
+    height: 300px;
+    /* overflow-y: auto; */
+}
+
+#simplemodal-overlay {
+    background-color:black;
+    filter: alpha(opacity=75); /* internet explorer */
+    -khtml-opacity: 0.75;      /* khtml, old safari */
+    -moz-opacity: 0.75;       /* mozilla, netscape */
+    opacity: 0.75;           /* fx, safari, opera */
+}
+
+#simplemodal-container {
+    min-width: 350px;
+    background: #ffffff;
+    padding: 2px;
+    box-shadow: 0px 0px 12px #333333;
+    border-radius: 5px;
+}
+
+.close {
+    float:right;
+    padding: 0px 0px;
+}
